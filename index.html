@@ -33,16 +33,40 @@
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2>Welcome to Athavan Institute</h2>
-                <p>Empowering students through quality education and personalized learning experiences</p>
-                <a href="#register" class="btn">Register Now</a>
+    <!-- Enhanced Hero Section with Slider -->
+    <section id="home" class="hero-section">
+        <!-- Hero Slider -->
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-background" style="background-image: url('./img/p1.jpg');"></div>
             </div>
-            <div class="hero-image">
-                <img src="./img/WhatsApp Image 2025-05-20 at 10.20.46_f07ae49d.jpg" alt="Students learning">
+            <div class="hero-slide">
+                <div class="hero-background" style="background-image: url('./img/p2.jpg');"></div>
             </div>
+            <div class="hero-slide">
+                <div class="hero-background" style="background-image: url('./img/p3.jpg');"></div>
+            </div>
+        </div>
+        
+        <!-- Slider Navigation -->
+        <div class="slider-nav">
+            <button class="slider-arrow prev" aria-label="Previous slide">&#10094;</button>
+            <div class="slider-dots">
+                <span class="slider-dot active" data-slide="0"></span>
+                <span class="slider-dot" data-slide="1"></span>
+                <span class="slider-dot" data-slide="2"></span>
+            </div>
+            <button class="slider-arrow next" aria-label="Next slide">&#10095;</button>
+        </div>
+        
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Content -->
+        <div class="container hero-content">
+            <h2 class="animate-fade-in">Welcome to Athavan Institute</h2>
+            <p class="animate-fade-in-delay">Empowering students through quality education and personalized learning experiences</p>
+            <a href="#register" class="btn btn-large animate-fade-in-delay-2">Register Now</a>
         </div>
     </section>
 
@@ -74,20 +98,21 @@
                     <div class="class-time">3:30 PM - 5:00 PM</div>
                     <p class="class-description">Organic and inorganic chemistry with practical lab demonstrations and problem-solving.</p>
                 </div>
-                 <div class="class-card">
+                <div class="class-card">
                     <div class="class-header">
-                        <h3>Chemistry</h3>
+                        <h3>Biology</h3>
                         <span class="class-date">Wed, Sat</span>
                     </div>
                     <div class="class-time">3:30 PM - 5:00 PM</div>
-                    <p class="class-description">Organic and inorganic chemistry with practical lab demonstrations and problem-solving.</p>
-                </div> <div class="class-card">
+                    <p class="class-description">Comprehensive biology course with focus on human anatomy and cellular biology.</p>
+                </div>
+                <div class="class-card">
                     <div class="class-header">
-                        <h3>Chemistry</h3>
+                        <h3>Computer Science</h3>
                         <span class="class-date">Wed, Sat</span>
                     </div>
                     <div class="class-time">3:30 PM - 5:00 PM</div>
-                    <p class="class-description">Organic and inorganic chemistry with practical lab demonstrations and problem-solving.</p>
+                    <p class="class-description">Programming fundamentals and advanced algorithms for competitive coding.</p>
                 </div>
                 <div class="class-card">
                     <div class="class-header">
@@ -101,54 +126,107 @@
         </div>
     </section>
 
+    <!-- Enhanced Event Posters Section -->
     <section id="posters" class="posters">
         <div class="container">
             <h2 class="section-title">Event Posters</h2>
-            <div class="poster-gallery">
+            <div class="poster-row">
+                <!-- Poster 1 -->
                 <div class="poster-item">
-                    <img src="/img/WhatsApp Image 2025-05-20 at 10.20.46_f07ae49d.jpg" alt="Science Fair Poster">
-                    <div class="poster-caption">Annual Science Fair</div>
+                    <div class="poster-image">
+                        <img src="./img/poster1.jpg" alt="Science Fair Poster">
+                    </div>
+                    <div class="poster-content">
+                        <h3 class="poster-title">Annual Science Fair</h3>
+                        <p class="poster-description">Join us for a day of scientific discovery and innovation. Open to all students.</p>
+                        <div class="poster-details">
+                            <span class="poster-date">May 15, 2025</span>
+                            <span class="poster-location">Main Auditorium</span>
+                        </div>
+                    </div>
                 </div>
+                
+                <!-- Poster 2 -->
                 <div class="poster-item">
-                    <img src="/img/WhatsApp Image 2025-05-20 at 10.20.46_f07ae49d.jpg" alt="Math Competition Poster">
-                    <div class="poster-caption">Mathematics Competition</div>
+                    <div class="poster-image">
+                        <img src="./img/poster2.jpg" alt="Mathematics Competition">
+                    </div>
+                    <div class="poster-content">
+                        <h3 class="poster-title">Mathematics Competition</h3>
+                        <p class="poster-description">Test your mathematical skills and compete for scholarships and prizes.</p>
+                        <div class="poster-details">
+                            <span class="poster-date">June 10, 2025</span>
+                            <span class="poster-location">Room 201</span>
+                        </div>
+                    </div>
                 </div>
+                
+                <!-- Poster 3 -->
                 <div class="poster-item">
-                    <img src="/img/WhatsApp Image 2025-05-20 at 10.20.46_f07ae49d.jpg" alt="Literature Workshop Poster">
-                    <div class="poster-caption">Creative Writing Workshop</div>
+                    <div class="poster-image">
+                        <img src="./img/poster3.jpg" alt="Creative Writing Workshop">
+                    </div>
+                    <div class="poster-content">
+                        <h3 class="poster-title">Creative Writing Workshop</h3>
+                        <p class="poster-description">Develop your storytelling abilities with guidance from published authors.</p>
+                        <div class="poster-details">
+                            <span class="poster-date">July 5, 2025</span>
+                            <span class="poster-location">Library</span>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            
+            <div class="poster-row">
+                <!-- Poster 4 -->
                 <div class="poster-item">
-                    <img src="/img/WhatsApp Image 2025-05-20 at 10.20.46_f07ae49d.jpg" alt="Career Day Poster">
-                    <div class="poster-caption">Career Guidance Day</div>
+                    <div class="poster-image">
+                        <img src="./img/poster4.jpg" alt="Career Guidance Day">
+                    </div>
+                    <div class="poster-content">
+                        <h3 class="poster-title">Career Guidance Day</h3>
+                        <p class="poster-description">Meet professionals from various fields and get advice on career paths.</p>
+                        <div class="poster-details">
+                            <span class="poster-date">August 20, 2025</span>
+                            <span class="poster-location">Main Hall</span>
+                        </div>
+                    </div>
                 </div>
+                
+                <!-- Poster 5 -->
                 <div class="poster-item">
-                    <img src="/img/WhatsApp Image 2025-05-20 at 10.20.46_f07ae49d.jpg" alt="Summer Camp Poster">
-                    <div class="poster-caption">Summer Learning Camp</div>
+                    <div class="poster-image">
+                        <img src="./img/poster5.jpg" alt="Summer Learning Camp">
+                    </div>
+                    <div class="poster-content">
+                        <h3 class="poster-title">Summer Learning Camp</h3>
+                        <p class="poster-description">Two-week intensive program covering all major subjects with fun activities.</p>
+                        <div class="poster-details">
+                            <span class="poster-date">July 15-30, 2025</span>
+                            <span class="poster-location">Campus Grounds</span>
+                        </div>
+                    </div>
                 </div>
+                
+                <!-- Poster 6 -->
                 <div class="poster-item">
-                    <img src="/img/WhatsApp Image 2025-05-20 at 10.20.46_f07ae49d.jpg" alt="Debate Competition Poster">
-                    <div class="poster-caption">Inter-School Debate</div>
-                </div>
-                  <div class="poster-item">
-                    <img src="/img/WhatsApp Image 2025-05-20 at 10.20.46_f07ae49d.jpg" alt="Literature Workshop Poster">
-                    <div class="poster-caption">Creative Writing Workshop</div>
-                </div>
-                <div class="poster-item">
-                    <img src="/img/WhatsApp Image 2025-05-20 at 10.20.46_f07ae49d.jpg" alt="Career Day Poster">
-                    <div class="poster-caption">Career Guidance Day</div>
-                </div>
-                <div class="poster-item">
-                    <img src="/img/WhatsApp Image 2025-05-20 at 10.20.46_f07ae49d.jpg" alt="Summer Camp Poster">
-                    <div class="poster-caption">Summer Learning Camp</div>
-                </div>
-                <div class="poster-item">
-                    <img src="/img/WhatsApp Image 2025-05-20 at 10.20.46_f07ae49d.jpg" alt="Debate Competition Poster">
-                    <div class="poster-caption">Inter-School Debate</div>
+                    <div class="poster-image">
+                        <img src="./img/poster6.jpg" alt="Inter-School Debate">
+                    </div>
+                    <div class="poster-content">
+                        <h3 class="poster-title">Inter-School Debate</h3>
+                        <p class="poster-description">Showcase your public speaking and critical thinking skills in this competition.</p>
+                        <div class="poster-details">
+                            <span class="poster-date">September 5, 2025</span>
+                            <span class="poster-location">Auditorium</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Subject Schedule Section -->
     <section id="subjects" class="subjects">
         <div class="container">
             <h2 class="section-title">Subject Schedule</h2>
@@ -206,17 +284,26 @@
         </div>
     </section>
 
+    <!-- Registration Section with Google Form -->
     <section id="register" class="register">
         <div class="container">
             <h2 class="section-title">Registration</h2>
             <div class="register-content">
                 <div class="register-text">
                     <p>Ready to enhance your academic journey? Register for our classes today and take the first step towards academic excellence.</p>
-                    <p>Our registration process is simple and straightforward. Click the button below to fill out our Google Form.</p>
-                    <a href="https://forms.google.com" target="_blank" class="btn btn-large">Register via Google Form</a>
+                    <p>Our registration process is simple and straightforward. Fill out the form below to get started.</p>
                 </div>
-                <div class="register-image">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Student registration">
+                <div class="register-form">
+                    <!-- Google Form Embed -->
+                    <div class="google-form-container">
+                        <!-- Replace the src with your actual Google Form embed URL -->
+                        <iframe class="google-form" src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        
+                        <!-- Alternative Button for Mobile -->
+                        <div class="mobile-form-button">
+                            <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" class="btn btn-large">Open Registration Form</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
